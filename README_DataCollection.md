@@ -98,7 +98,17 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
   use_incremental_hand_orientation:=true
 ```
 
-## 2.3 Teleoperation command
+## 2.3 Set to initial position
+Set Kuavo5W to target initial position
+```bash
+bash set_robot.sh
+```
+> [!WARNING]
+> Set to initial position before wearing quest3 and active Kuavo-Hand-Track-MR app.
+
+## 2.4 Teleoperation command
+
+Wear quest3 and activate Kuavo-Hand-Track-MR app. VR commands are summrized as below:
 
 #### (1) 手部控制（灵巧手）
 
@@ -143,14 +153,18 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
 同时按下 X + Y 键，此时机器人启动程序关闭
 
 # 3. Rosbag data collection
+## 3.1 Upper Machine
 ```bash
 # 上位机执行： rs-enumerate-devices 查看左右手腕相机Device info/Serial Number
 # 终端执行 sudo vim /etc/kuavo.conf 将查到的设备号改入 CAMERA_LEFT=,CAMERA_RIGHT=
 sudo systemctl enable start_camera.service 
+# 这一步之前已执行好，可以不执行
+```
 
+# 3.2 Lower Machine
+```bash
 # 下位机执行：
 cd kuavo-ros-opensource-1.3.3
-
 source devel/setup.bash
 
 # before you start recording, configure the save path and rosbag name when necessary
