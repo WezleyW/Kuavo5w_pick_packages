@@ -7,15 +7,15 @@ External Network of Kuavo5W
 SSID: LejuRobotics
 Password: 1234567890
 
-# 下位机ip:
+# 下位机 IP:
 192.168.1.11 # usb
 192.168.1.12 # wifi
 
-# 上位机ip:
+# 上位机 IP:
 192.168.1.13 # usb
 192.168.1.14 # wifi
 
-# VR ip:
+# VR IP:
 192.168.1.15 # usb
 192.168.1.16 # wifi
 ```
@@ -31,3 +31,9 @@ Internal Network of Kuavo5W
 # 底盘 IP:
 192.168.26.22
 ```
+
+# 2. Python-based VR Control
+
+1. Connect Kuavo5W and quest3 with LejuRobotics network 
+## ⚠️ Warning
+Wired connection and wireless connection are both feasible, but **pay attention to different ip address**
