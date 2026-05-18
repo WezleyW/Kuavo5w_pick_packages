@@ -37,14 +37,14 @@ Internal Network of Kuavo5W
 192.168.26.22
 ```
 
-# 2. VR Control
+# 2. VR control
 
 ## 2.1 Connect Kuavo5W and quest3 with LejuRobotics network
 
 > [!WARNING]
 > Wired connection and wireless connection are both feasible, but **pay attention to different IP address**  
 
-## 2.2 Start teleoperation
+## 2.2 Roslunch Kuavo5W
 
 Choose one teleoperation mode. Mode2 and Mode3 is most recommended.
 
@@ -106,7 +106,7 @@ bash set_robot.sh
 > [!WARNING]
 > Set to initial position before wearing quest3 and active Kuavo-Hand-Track-MR app.
 
-## 2.4 Teleoperation command
+## 2.4 Start teleoperation
 
 Wear quest3 and activate Kuavo-Hand-Track-MR app. VR commands are summrized as below:
 
@@ -153,7 +153,7 @@ Wear quest3 and activate Kuavo-Hand-Track-MR app. VR commands are summrized as b
 同时按下 X + Y 键，此时机器人启动程序关闭
 
 # 3. Rosbag data collection
-## 3.1 Upper Machine
+## 3.1 Upper machine
 ```bash
 # 上位机执行： rs-enumerate-devices 查看左右手腕相机Device info/Serial Number
 # 终端执行 sudo vim /etc/kuavo.conf 将查到的设备号改入 CAMERA_LEFT=,CAMERA_RIGHT=
@@ -161,7 +161,7 @@ sudo systemctl enable start_camera.service
 # 这一步之前已执行好，可以不执行
 ```
 
-## 3.2 Lower Machine
+## 3.2 Lower machine
 ```bash
 # 下位机执行：
 cd kuavo-ros-opensource-1.3.3
