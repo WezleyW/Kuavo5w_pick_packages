@@ -111,7 +111,7 @@ bash set_robot.sh
 > [!WARNING]
 > Set to initial position before wearing quest3 and active Kuavo-Hand-Track-MR app.
 
-## 2.4 Start teleoperation
+## 2.4 Reset Videostream
 
 Wear quest3 and activate Kuavo-Hand-Track-MR app. 
 
@@ -121,7 +121,8 @@ If there is no videostream, run:
 rosnode kill /webrtc_videostream
 ```
 
-VR commands are summrized as below:
+## 2.5 Absolute VR command
+Absolute VR commands are summrized as below:
 
 #### (1) 手部控制（灵巧手）
 
@@ -164,6 +165,13 @@ VR commands are summrized as below:
 #### (6) 程序关闭
 
 同时按下 X + Y 键，此时机器人启动程序关闭
+
+## 2.6 Incremental VR command
+### (1) Switch arm control mode to 2:
+ press x + A twice to enable arm control mode switched to 2. (in terminal you will see the arm control mode changed from 0 -> 1 -> 2)
+
+### (2) Control the robot arms using hand joysticks: 
+press the both side trigger, meanwhile you can use the joystick to enable the arm tracking. other operation is same as above.
 
 # 3. Rosbag data collection
 ## 3.1 Upper machine
