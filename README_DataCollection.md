@@ -52,11 +52,12 @@ Choose one teleoperation mode. Mode2 and Mode3 is most recommended.
 
 Absolute teleoperation with all degree of freedom (arms+hands+head+waist+base)
 ```bash
+# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
 cd kuavo-ros-opensource-1.3.3/
 sudo su
 source devel/setup.bash
 roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
-  ip_address:=192.168.1.15 \# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
+  ip_address:=192.168.1.15 \
   enable_videostream:=true \
   camera_publisher_name:=/cam_h/color
 
@@ -67,11 +68,12 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
 
 Absolute teleoperation with only degree of freedom of upper body (arms+hand)
 ```bash
+# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
 cd kuavo-ros-opensource-1.3.3/
 sudo su
 source devel/setup.bash
 roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
-  ip_address:=192.168.1.15 \# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
+  ip_address:=192.168.1.15 \
   control_torso:=false \
   enable_head_control:=false \
   enable_base_control:=false \
@@ -84,11 +86,12 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
 ### Mode3: Upper incremental teleoperation mode (recommended)
 Incremental teleoperation with only degree of freedom of upper body (arms+hand). Incremental control mode makes more smooth actions.
 ```bash
+# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
 cd kuavo-ros-opensource-1.3.3/
 sudo su
 source devel/setup.bash
 roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
-  ip_address:=192.168.1.15 \# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
+  ip_address:=192.168.1.15 \
   control_torso:=false \
   enable_head_control:=false \
   enable_base_control:=false \
