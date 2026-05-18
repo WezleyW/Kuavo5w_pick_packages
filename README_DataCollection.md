@@ -98,7 +98,7 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
   enable_videostream:=true \
   camera_publisher_name:=/cam_h/color \
   use_cpp_incremental_ik:=true \
-  use_incremental_hand_orientation:=true
+  use_incremental_hand_orientation:=false
 ```
 
 ## 2.3 Set to initial position
