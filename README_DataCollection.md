@@ -1,7 +1,6 @@
-# Kuavo5w_pick_packages
+# Kuavo5W Data Collection tutorial
 This is a tutorial for data collection of Kuavo5W for Embodied Intelligence and Robotic Systems (EMBODICA) Lab, School of Intelligence and Science Technology, Nanjing University (Suzhou Campus).
-1. Basic information
-
+# 1. Basic information
 External Network of Kuavo5W
 ```bash
 # WiFi
