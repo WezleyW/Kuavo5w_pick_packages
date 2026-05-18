@@ -167,10 +167,10 @@ Absolute VR commands are summrized as below:
 同时按下 X + Y 键，此时机器人启动程序关闭
 
 ## 2.6 Incremental VR command
-### (1) Switch arm control mode to 2:
+#### (1) Switch arm control mode to 2:
  press x + A twice to enable arm control mode switched to 2. (in terminal you will see the arm control mode changed from 0 -> 1 -> 2)
 
-### (2) Control the robot arms using hand joysticks: 
+#### (2) Control the robot arms using hand joysticks: 
 press the both side trigger, meanwhile you can use the joystick to enable the arm tracking. other operation is same as above.
 
 # 3. Rosbag data collection
