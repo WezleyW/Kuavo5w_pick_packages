@@ -34,5 +34,7 @@ Internal Network of Kuavo5W
 
 # 2. Python-based VR Control
 
-1. Connect Kuavo5W and quest3 with LejuRobotics network 
-⚠️ **Warning:** Wired connection and wireless connection are both feasible, but **pay attention to different IP address**
+1. Connect Kuavo5W and quest3 with LejuRobotics network
+
+> [!WARNING]
+> Wired connection and wireless connection are both feasible, but **pay attention to different IP address**  
