@@ -56,7 +56,7 @@ cd kuavo-ros-opensource-1.3.3/
 sudo su
 source devel/setup.bash
 roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
-  ip_address:=192.168.1.15 \    # Double-check that the IP address matches the actual connection method (wired or wireless)!!!
+  ip_address:=192.168.1.15 \# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
   enable_videostream:=true \
   camera_publisher_name:=/cam_h/color
 
@@ -71,7 +71,7 @@ cd kuavo-ros-opensource-1.3.3/
 sudo su
 source devel/setup.bash
 roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
-  ip_address:=192.168.1.15 \    # Double-check that the IP address matches the actual connection method (wired or wireless)!!!
+  ip_address:=192.168.1.15 \# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
   control_torso:=false \
   enable_head_control:=false \
   enable_base_control:=false \
@@ -88,7 +88,7 @@ cd kuavo-ros-opensource-1.3.3/
 sudo su
 source devel/setup.bash
 roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
-  ip_address:=192.168.1.15 \    # Double-check that the IP address matches the actual connection method (wired or wireless)!!!
+  ip_address:=192.168.1.15 \# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
   control_torso:=false \
   enable_head_control:=false \
   enable_base_control:=false \
