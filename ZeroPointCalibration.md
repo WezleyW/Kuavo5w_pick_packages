@@ -1,6 +1,6 @@
 # 1.进入零点标定
 ```bash
-cd kuavo-ros-opensource  
+cd kuavo-ros-opensource-1.3.3  
 sudo su  
 source devel/setup.bash  
 roslaunch humanoid_controllers load_kuavo_real_wheel.launch cali:=true cali_leg:=true cali_arm:=true ##标定腿部和手臂、头部
