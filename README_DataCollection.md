@@ -99,6 +99,8 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
   camera_publisher_name:=/cam_h/color \
   use_cpp_incremental_ik:=true \
   use_incremental_hand_orientation:=false
+
+# press `o` to enable control
 ```
 
 ## 2.3 Set to initial position
@@ -111,7 +113,15 @@ bash set_robot.sh
 
 ## 2.4 Start teleoperation
 
-Wear quest3 and activate Kuavo-Hand-Track-MR app. VR commands are summrized as below:
+Wear quest3 and activate Kuavo-Hand-Track-MR app. 
+
+If there is no videostream, run:
+
+```bash
+rosnode kill /webrtc_videostream
+```
+
+VR commands are summrized as below:
 
 #### (1) 手部控制（灵巧手）
 
@@ -176,3 +186,10 @@ python3 src/demo/examples_code/record_data/rosbag_tool.py
 # In the terminal select: `recording the rosbag` to start the recording
 # press `ctrl + c` to and save the recording
 ```
+
+# 4.Reset Kuavo5W
+```bash
+bash reset_robot.sh
+```
+> [!WARNING]
+> Must reset Kuavo5W, or you may fail in the next roslaunch!!!
