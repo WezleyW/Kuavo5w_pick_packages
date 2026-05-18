@@ -10,6 +10,7 @@ roslaunch humanoid_controllers load_kuavo_real_wheel.launch cali:=true cali_leg:
 在终端输入 y 确认，腰部电机将进入“软”状态。
 > [!WARNING]
 > 此时机器人将瘫倒！！！务必有人在按 y 前扶着机器人
+
 手动将腰部摆到正确位置，根据指示保存标定结果，并进入后续标定流程。
 
 # 3.标定手臂及头部
