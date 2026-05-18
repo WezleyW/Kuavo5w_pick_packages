@@ -1,4 +1,4 @@
-# Kuavo5W Data Collection tutorial
+# Kuavo5W Data Collection Tutorial
 
 This is a tutorial for data collection of Kuavo5W for Embodied Intelligence and Robotic Systems (EMBODICA) Lab, School of Intelligence and Science Technology, Nanjing University (Suzhou Campus).
 
@@ -161,7 +161,7 @@ sudo systemctl enable start_camera.service
 # 这一步之前已执行好，可以不执行
 ```
 
-# 3.2 Lower Machine
+## 3.2 Lower Machine
 ```bash
 # 下位机执行：
 cd kuavo-ros-opensource-1.3.3
