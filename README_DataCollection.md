@@ -81,13 +81,13 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
 
 ### Teleoperation command
 
-#### 手部控制（灵巧手）
+#### (1) 手部控制（灵巧手）
 
 手指张合：按前扳机控制手指张合。
 
 拇指开合：触摸 X / A 键控制拇指开合。
 
-#### 腰部控制
+#### (2) 腰部控制
 
 开启方法：
 
@@ -99,7 +99,7 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
 
 注意：开启腰部控制后请缓慢移动身体，以避免发生机器人快速运动导致异常损坏。
 
-#### 手臂解锁/锁定与复位
+#### (3) 手臂解锁/锁定与复位
 
 解锁手臂：同时按X + A键，再按左右上扳机，再按X和A键解锁手臂。
 
@@ -107,19 +107,19 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
 
 后续如需再次解锁，重复按下 X + A 即可。
 
-#### 固定手臂位置
+#### (4) 固定手臂位置
 
 固定：同时按下 X + B 此时会固定手臂。
 
 解锁：再次按 X + B 此时会解锁手臂。
 
-#### 移动控制
+#### (5) 移动控制
 
 前进/后退：向前/后推左手柄拨杆。
 
 左转/右转：向左/右推右手柄拨杆。
 
-#### 程序关闭
+#### (6) 程序关闭
 
 同时按下 X + Y 键，此时机器人启动程序关闭
 
