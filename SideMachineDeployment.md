@@ -74,7 +74,7 @@ docker exec -it ubuntu_ros_container_wezley /bin/bash
 ```bash
 cd /home/wangyuxuan/Projects/Projects_wezley/Kuavo5W/kuavo_data_challenge_wezley
 conda activate kdc_dev
-python kuavo_depoly/eval_kuavo.py
+python kuavo_deploy/eval_kuavo.py
 #后面输入3，
 #输入configs/deploy/kuavo_env.yaml
 #输入2插值到起始位置并开始播放bag(bag位置根据kuavo_env.yaml中90行的go_bag_path指定)
