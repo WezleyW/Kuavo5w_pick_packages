@@ -72,7 +72,7 @@ docker exec -it ubuntu_ros_container_wezley /bin/bash
 运行如下代码
 
 ```bash
-cd /home/wangyuxuan/Projects/Projects_wezley/Kuavo5W/kuavo_data_challenge_wezley
+cd workspace/Projects_wezley/Kuavo5W/kuavo_data_challenge_wezley
 conda activate kdc_dev
 python kuavo_deploy/eval_kuavo.py
 #后面输入3，
