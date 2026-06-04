@@ -47,6 +47,7 @@ Internal Network of Kuavo5W
 ## 2.2 Roslunch Kuavo5W
 
 Choose one teleoperation mode. Mode2 and Mode3 is most recommended.
+（开启在下位机库上的第一个terminal，运行roslaunch）
 
 ### Mode1: Default absolute teleoperation mode (dangerous!!!)
 
@@ -104,6 +105,7 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
 ```
 
 ## 2.3 Set to initial position
+（开启在下位机库上的第二个terminal，运行set脚本，让机器人到达指定位置）
 Set Kuavo5W to target initial position
 ```bash
 bash set_robot.sh
@@ -183,6 +185,7 @@ sudo systemctl enable start_camera.service
 ```
 
 ## 3.2 Lower machine
+（开启在下位机库上的第二=三个terminal，运行rosbag 数据采集脚本，注意千万不要运行sudo su之后运行这个录包的脚本！！！，这会导致录得包需要root权限读取，replay什么的也很麻烦）
 ```bash
 # 下位机执行：
 cd kuavo-ros-opensource-1.3.3
@@ -196,6 +199,7 @@ python3 src/demo/examples_code/record_data/rosbag_tool.py
 ```
 
 # 4.Reset Kuavo5W
+（还是在下位机库上的第二个terminal，在结束roslaunch之前运行reset脚本，让机器人到达指定位置，然后再结束roslaunch）
 ```bash
 bash reset_robot.sh
 ```
