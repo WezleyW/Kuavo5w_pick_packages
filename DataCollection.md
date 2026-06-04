@@ -185,7 +185,7 @@ sudo systemctl enable start_camera.service
 ```
 
 ## 3.2 Lower machine
-（开启在下位机库上的第二=三个terminal，运行rosbag 数据采集脚本，注意千万不要运行sudo su之后运行这个录包的脚本！！！，这会导致录得包需要root权限读取，replay什么的也很麻烦）
+（开启在下位机库上的第三个terminal，运行rosbag 数据采集脚本，注意千万不要运行sudo su之后运行这个录包的脚本！！！这会导致录得包需要root权限读取，replay什么的也很麻烦）
 ```bash
 # 下位机执行：
 cd kuavo-ros-opensource-1.3.3
