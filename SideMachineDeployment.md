@@ -8,6 +8,7 @@
 
 ```bash
 cd kuavo-ros-opensource-1.3.3
+sudo su
 source devel/setup.bash
 roslaunch humanoid_controllers load_kuavo_real_wheel.launch #可以加上cali:=true参数进行限位标定
 #等待，按o启动
