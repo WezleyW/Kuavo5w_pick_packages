@@ -56,7 +56,7 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
     use_cpp_incremental_ik:=true \
     use_incremental_hand_orientation:=false \
     control_torso:=false \
-    wheel_ik:=false \
+    wheel_ik:=true \
     enable_head_control:=false
 
 # press `o` to enable control
