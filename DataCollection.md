@@ -48,6 +48,9 @@ Internal Network of Kuavo5W
 ### Upper incremental teleoperation mode (recommended)
 Open a terminal and run roslaunch.
 ```bash
+cd kuavo-ros-opensource-1.4.4/
+sudo su
+source devel/setup.bash
 roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
     ip_address:=192.168.1.15 \
     use_cpp_incremental_ik:=true \
