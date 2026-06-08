@@ -45,67 +45,27 @@ Internal Network of Kuavo5W
 > Wired connection and wireless connection are both feasible, but **pay attention to different IP address**  
 
 ## 2.2 Roslunch Kuavo5W
-
-Choose one teleoperation mode. Mode2 and Mode3 is most recommended.
-（开启在下位机库上的第一个terminal，运行roslaunch）
-
-### Mode1: Default absolute teleoperation mode (dangerous!!!)
-
-Absolute teleoperation with all degree of freedom (arms+hands+head+waist+base)
+### Upper incremental teleoperation mode (recommended)
+Open a terminal and run roslaunch.
 ```bash
-# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
-cd kuavo-ros-opensource-1.3.3/
-sudo su
-source devel/setup.bash
 roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
-  ip_address:=192.168.1.15 \
-  enable_videostream:=true \
-  camera_publisher_name:=/cam_h/color
+    ip_address:=192.168.1.15 \
+    use_cpp_incremental_ik:=true \
+    use_incremental_hand_orientation:=false \
+    control_torso:=false \
+    wheel_ik:=false \
+    enable_head_control:=false
 
 # press `o` to enable control
 ```
-
-### Mode2: Upper absolute teleoperation mode (recommended)
-
-Absolute teleoperation with only degree of freedom of upper body (arms+hand)
+If the roslaunch is failed, run 
 ```bash
-# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
-cd kuavo-ros-opensource-1.3.3/
-sudo su
-source devel/setup.bash
-roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
-  ip_address:=192.168.1.15 \
-  control_torso:=false \
-  enable_head_control:=false \
-  enable_base_control:=false \
-  enable_videostream:=true \
-  camera_publisher_name:=/cam_h/color
-
-# press `o` to enable control
-```
-
-### Mode3: Upper incremental teleoperation mode (recommended)
-Incremental teleoperation with only degree of freedom of upper body (arms+hand). Incremental control mode makes more smooth actions.
-```bash
-# Double-check that the IP address matches the actual connection method (wired or wireless)!!!
-cd kuavo-ros-opensource-1.3.3/
-sudo su
-source devel/setup.bash
-roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
-  ip_address:=192.168.1.15 \
-  control_torso:=false \
-  enable_head_control:=false \
-  enable_base_control:=false \
-  enable_videostream:=true \
-  camera_publisher_name:=/cam_h/color \
-  use_cpp_incremental_ik:=true \
-  use_incremental_hand_orientation:=false
-
-# press `o` to enable control
-```
+pkill -f ros
+````
+and try again.
 
 ## 2.3 Set to initial position
-（开启在下位机库上的第二个terminal，运行set脚本，让机器人到达指定位置）
+Open another terminal, run setup script to set to initial position.
 Set Kuavo5W to target initial position
 ```bash
 bash set_robot.sh
@@ -116,12 +76,6 @@ bash set_robot.sh
 ## 2.4 Reset Videostream
 
 Wear quest3 and activate Kuavo-Hand-Track-MR app. 
-
-If there is no videostream, run:
-
-```bash
-rosnode kill /webrtc_videostream
-```
 
 ## 2.5 Absolute VR command
 Absolute VR commands are summrized as below:
