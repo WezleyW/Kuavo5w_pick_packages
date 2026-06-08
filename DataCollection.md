@@ -55,9 +55,10 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
     ip_address:=192.168.1.15 \
     use_cpp_incremental_ik:=true \
     use_incremental_hand_orientation:=false \
-    control_torso:=false \
-    wheel_ik:=true \
-    enable_head_control:=false
+    enable_head_control:=false \
+    enable_chassis_control:=false \
+    enable_lb_leg_control:=false \
+    control_torso:=false
 
 # press `o` to enable control
 ```
