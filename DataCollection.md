@@ -45,7 +45,25 @@ Internal Network of Kuavo5W
 > Wired connection and wireless connection are both feasible, but **pay attention to different IP address**  
 
 ## 2.2 Roslunch Kuavo5W
-### Upper incremental teleoperation mode (recommended)
+### Kuavo-ros-opensource-1.3.3: incremental teleoperation
+Open a terminal and run roslaunch.
+```bash
+cd kuavo-ros-opensource-1.3.3/
+sudo su
+source devel/setup.bash
+roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
+  ip_address:=192.168.1.15 \
+  control_torso:=false \
+  enable_head_control:=false \
+  enable_base_control:=false \
+  enable_videostream:=true \
+  camera_publisher_name:=/cam_h/color \
+  use_cpp_incremental_ik:=true \
+  use_incremental_hand_orientation:=false
+# press `o` to enable control
+```
+
+### Kuavo-ros-opensource-1.4.4: incremental teleoperation
 Open a terminal and run roslaunch.
 ```bash
 cd kuavo-ros-opensource-1.4.4/
@@ -62,6 +80,8 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
 
 # press `o` to enable control
 ```
+
+### Nodlet failure
 If the roslaunch is failed, run 
 ```bash
 pkill -f ros
