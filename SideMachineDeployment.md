@@ -69,15 +69,24 @@ rostopic 正常，即可开始边侧机推理
 docker start ubuntu_ros_container_wezley
 docker exec -it ubuntu_ros_container_wezley /bin/bash
 ```
-
+## 4.1 Kuavo_data_challenge 部署
 运行如下代码
 
 ```bash
 cd workspace/Projects_wezley/Kuavo5W/kuavo_data_challenge_wezley
-conda activate kdc_dev
+conda activate kdc
 python kuavo_deploy/eval_kuavo.py
 #后面输入3，
 #输入configs/deploy/kuavo_env.yaml
 #输入2插值到起始位置并开始播放bag(bag位置根据kuavo_env.yaml中90行的go_bag_path指定)
 #输入3开始模型推理
+```
+
+## 4.2 Kuavo_learning_studio 部署
+运行如下代码
+
+```bash
+cd workspace/Projects_wezley/kuavo_learning_studio_wezley
+conda activate kls_dev
+python kuavo_deploy/eval.py
 ```
