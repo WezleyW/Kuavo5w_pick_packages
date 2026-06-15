@@ -68,6 +68,7 @@ rostopic 正常，即可开始边侧机推理
 ```bash
 docker start ubuntu_ros_container_wezley
 docker exec -it ubuntu_ros_container_wezley /bin/bash
+source /opt/ros/noetic/setup.bash
 ```
 ## 4.1 Kuavo_data_challenge 部署
 运行如下代码
