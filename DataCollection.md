@@ -63,7 +63,7 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
 # press `o` to enable control
 ```
 
-### Kuavo-ros-opensource-1.4.4: incremental teleoperation
+### Kuavo-ros-opensource-1.4.4: incremental teleoperation (暂不可用）
 Open a terminal and run roslaunch.
 ```bash
 cd kuavo-ros-opensource-1.4.4/
