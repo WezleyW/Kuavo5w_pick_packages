@@ -56,7 +56,7 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
   control_torso:=false \
   enable_head_control:=false \
   enable_base_control:=false \
-  enable_videostream:=true \
+  enable_videostream:=false \ # 如需图传，可改为true
   camera_publisher_name:=/cam_h/color \
   use_cpp_incremental_ik:=true \
   use_incremental_hand_orientation:=false
