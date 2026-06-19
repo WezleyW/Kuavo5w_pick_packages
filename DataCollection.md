@@ -87,6 +87,8 @@ If the roslaunch is failed, run
 pkill -f ros
 ````
 and try again.
+> [!WARNING]
+> You may need to **reload some camera ros nodes** after pkill.
 
 ## 2.3 Set to initial position
 Open another terminal, run setup script to set to initial position.
@@ -163,7 +165,9 @@ sudo systemctl enable start_camera.service
 ```
 
 ## 3.2 Lower machine
-（开启在下位机库上的第三个terminal，运行rosbag 数据采集脚本，注意千万不要运行sudo su之后运行这个录包的脚本！！！这会导致录得包需要root权限读取，replay什么的也很麻烦）
+Run following scripts to start rosbag record.
+> [!WARNING]
+> Run followning scripts in the **third terminal**. Do not run these scripts in sudo mode!
 ```bash
 # 下位机执行：
 cd kuavo-ros-opensource-1.3.3
@@ -177,7 +181,8 @@ python3 src/demo/examples_code/record_data/rosbag_tool.py
 ```
 
 # 4.Reset Kuavo5W
-（还是在下位机库上的第二个terminal，在结束roslaunch之前运行reset脚本，让机器人到达指定位置，然后再结束roslaunch）
+> [!WARNING]
+> Run followning scripts in the **second terminal** to set the robot to the initial position.
 ```bash
 bash reset_robot.sh
 ```
