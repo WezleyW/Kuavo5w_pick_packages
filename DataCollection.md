@@ -46,7 +46,7 @@ Internal Network of Kuavo5W
 
 ## 2.2 Roslunch Kuavo5W
 ### Kuavo-ros-opensource-1.3.3: incremental teleoperation
-Open a terminal and run roslaunch.
+In the **first terminal**, run following roslaunch script:
 ```bash
 cd kuavo-ros-opensource-1.3.3/
 sudo su
@@ -64,7 +64,7 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
 ```
 
 ### Kuavo-ros-opensource-1.4.4: incremental teleoperation (暂不可用）
-Open a terminal and run roslaunch.
+In the **first terminal**, run following roslaunch script:
 ```bash
 cd kuavo-ros-opensource-1.4.4/
 sudo su
@@ -91,8 +91,7 @@ and try again.
 > You may need to **reload some camera ros nodes** after pkill.
 
 ## 2.3 Set to initial position
-Open another terminal, run setup script to set to initial position.
-Set Kuavo5W to target initial position
+In the **second terminal**, run setup script to set the robot to target preparing position.
 ```bash
 bash set_robot.sh
 ```
@@ -107,45 +106,31 @@ Wear quest3 and activate Kuavo-Hand-Track-MR app.
 Absolute VR commands are summrized as below:
 
 #### (1) 手部控制（灵巧手）
-
 手指张合：按前扳机控制手指张合。
-
 拇指开合：触摸 X / A 键控制拇指开合。
 
 #### (2) 手臂解锁/锁定与复位
-
 解锁手臂：同时按X + A键，再按左右上扳机，再按X和A键解锁手臂。
-
 复位并锁定手臂：再次同时按下 X + A，此时手臂恢复到初始状态并锁定。
-
 后续如需再次解锁，重复按下 X + A 即可。
 
 #### (3) 固定手臂位置
-
 固定：同时按下 X + B 此时会固定手臂。
-
 解锁：再次按 X + B 此时会解锁手臂。
 
 #### (4) 腰部控制
-
 开启方法：
-
 轻触摸X和Y键+按下B 键(注意不是重按X和Y键)，此时下肢会同步人体动作。
 
 关闭方法：
-
 轻触摸X和Y键+按下B 键(注意不是重按X和Y键)，此时下肢会复位到初始状态。
-
 注意：开启腰部控制后请缓慢移动身体，以避免发生机器人快速运动导致异常损坏。
 
 #### (5) 移动控制
-
 前进/后退：向前/后推左手柄拨杆。
-
 左转/右转：向左/右推右手柄拨杆。
 
 #### (6) 程序关闭
-
 同时按下 X + Y 键，此时机器人启动程序关闭
 
 ## 2.6 Incremental VR command
@@ -186,5 +171,3 @@ python3 src/demo/examples_code/record_data/rosbag_tool.py
 ```bash
 bash reset_robot.sh
 ```
-> [!WARNING]
-> Must reset Kuavo5W, or you may fail in the next roslaunch!!!
