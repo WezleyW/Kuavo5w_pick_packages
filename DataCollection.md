@@ -56,11 +56,12 @@ roslaunch humanoid_controllers load_kuavo_real_wheel_vr.launch \
   control_torso:=false \
   enable_head_control:=false \
   enable_base_control:=false \
-  enable_videostream:=false \ # 如需图传，可改为true
+  enable_videostream:=false \
   camera_publisher_name:=/cam_h/color \
   use_cpp_incremental_ik:=true \
   use_incremental_hand_orientation:=false
 # press `o` to enable control
+# 如需图传，可将 enable_videostream 改为true
 ```
 
 ### Kuavo-ros-opensource-1.4.4: incremental teleoperation (暂不可用）
