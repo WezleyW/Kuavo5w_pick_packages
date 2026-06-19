@@ -74,7 +74,7 @@ source /opt/ros/noetic/setup.bash
 运行如下代码
 
 ```bash
-cd workspace/Projects_wezley/Kuavo5W/kuavo_data_challenge_wezley
+cd workspace/Projects_wezley/kuavo_data_challenge_wezley
 conda activate kdc
 python kuavo_deploy/eval_kuavo.py
 #后面输入3，
