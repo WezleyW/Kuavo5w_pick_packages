@@ -99,6 +99,8 @@ bash set_robot.sh
 ## 2.4 Reset Videostream
 
 Wear quest3 and activate Kuavo-Hand-Track-MR app. 
+<img width="1280" height="518" alt="遥操方式" src="https://github.com/user-attachments/assets/8ea9f011-a762-4f1a-bf1b-5848ce7cae98" />
+
 
 ## 2.5 Absolute VR command
 Absolute VR commands are summrized as below:
